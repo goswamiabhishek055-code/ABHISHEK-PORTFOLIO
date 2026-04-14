@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Abhishek Portfolio</title>
+  <title>Abhishek | Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hi, I'm Abhishek 👋</h1>
-  <p>This is my first portfolio website 🚀</p>
+<nav>
+  <h2>Abhishek</h2>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button onclick="toggleMode()">🌙</button>
+  </div>
+</nav>
 
+<section id="home" class="hero hidden">
+  <img src="https://via.placeholder.com/150" class="profile">
+  <h1>Hi, I'm Abhishek 👋</h1>
+  <h2><span id="typing"></span></h2>
+
+  <a href="#projects" class="btn">View Work</a>
+  <a href="resume.pdf" class="btn">Download Resume</a>
+</section>
+
+<section id="projects">
+  <h2>💻 Projects</h2>
+
+  <div class="card hidden">
+    <h3>Portfolio Website</h3>
+    <p>Modern personal portfolio</p>
+    <a href="#">Live</a>
+    <a href="#">Code</a>
+  </div>
+
+  <div class="card hidden">
+    <h3>Task Manager App</h3>
+    <p>Track daily tasks</p>
+    <a href="#">Live</a>
+    <a href="#">Code</a>
+  </div>
+
+</section>
+
+<section id="contact" class="hidden">
+  <h2>📫 Contact</h2>
+  <a href="#">GitHub</a>
+  <a href="#">LinkedIn</a>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
