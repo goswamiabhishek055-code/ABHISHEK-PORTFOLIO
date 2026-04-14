@@ -1,6 +1,86 @@
 body {
-  background-color: black;
-  color: white;
-  text-align: center;
+  margin: 0;
   font-family: Arial;
+  background: #0f172a;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Light Mode */
+.light {
+  background: white;
+  color: black;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 120px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* Cards */
+.card {
+  background: #1e293b;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(56,189,248,0.5);
+}
+
+/* Scroll Animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
 }
